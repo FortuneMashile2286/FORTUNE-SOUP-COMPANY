@@ -1,13 +1,17 @@
 # FORTUNE-SOUP-COMPANY
 website
+PART1
 
 
+
+
+PROJECT PROPOSAL
 1.Organization
 Fortune Soup Company is a community-focused initiative dedicated to nourishing both body and soul through wholesome soups and freshly baked bread. By sourcing ingredients from local farmers and generous donors, the organization not only provides healthy meals but also strengthens community bonds. Its mission extends beyond food—it seeks to spark change and bring people together around the shared value of care.
 Vision
 Our vision is to create a world where no one goes hungry, and every community is strengthened by compassion, generosity, and shared meals.
 
-________________________________________
+
 2.Website Goals
 The Fortune Soup Company website will serve as the organization’s digital hub. Its goals are to:
 •	Share the mission and story of the company.
@@ -15,19 +19,18 @@ The Fortune Soup Company website will serve as the organization’s digital hub.
 •	Enable community engagement through volunteer and donor participation.
 •	Establish a professional and trustworthy online identity.
 •	Expand visibility beyond the local community.
-________________________________________
+
 3.Features & Design
 The website will build on the current structure (Home, About Us, Services, Contact, Gallery) with modern enhancements:
 •	Donation & Volunteer Integration: Secure online donations and sign-up forms.
 •	Community Gallery: Highlight photos of events, food, and volunteers.
 •	Accessibility: Mobile-friendly layout and clear navigation.
 The design will use warm, inviting colors (soft blue, white, red highlights) to reflect the comfort of food and community. Large, readable fonts and high-quality visuals of soup, bread, and gatherings will reinforce the brand’s welcoming image.
-________________________________________
 
 
 4.Technical Requirements
 The website will be hosted under a secure domain with SSL certification. A user-friendly content management system (CMS) such as WordPress will allow staff to make updates. Features will include mobile responsiveness, SEO optimization, and Google Analytics integration. A secure payment gateway will support donations, while routine maintenance and backups will ensure stability.
-________________________________________
+
 5.Timeline & Milestones
 The project will run for approximately 13 weeks (3 months):
 1.	Planning & Requirements (2 weeks): Define scope and finalize content.
