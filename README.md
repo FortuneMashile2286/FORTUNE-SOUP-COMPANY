@@ -68,6 +68,74 @@ References
 •	Statistics South Africa (2023) Poverty trends in South Africa: an examination of absolute poverty between 2006 and 2021. Pretoria: Statistics South Africa. Available at: https://www.statssa.gov.za (Accessed: 15 August 2025).
 •	Web AIM (2021) Introduction to web accessibility. Available at: https://webaim.org/intro (Accessed: 15 August 2025).
 
-     
+IMPROVEMENT OF PART1
+
+Website
+
+HOME PAGE
+
+•	Css styling(to make the buttons large, and made them to be oval)
+•	Aligned the Logo to the Centre
+•	Css styling(pop out)
+
+CONTACT US
+•	Css styling(to make the CONTACT US button large, and made it to be oval)
+
+GALLERY
+
+•	Css styling(Images to pop out)
+•	Css styling(to make the GALLERY buttons large, and made it to be oval)
+
+SERVICES
+
+•	Css styling(to make the  SERVICES button  large, and made it  to be oval)
+
+ABOUT US
+
+•	Css styling(to make the ABOUT US button  large, and made it to be oval)
+
+
+PROJECT PLAN
+
+•	ADDED  WEBSITE STRUCTURE
+•	ADDED   PICTURE SOURCES
+
+PART2
+
+   Homepage CSS Changes
+
+1.	Added a full screen welcome splash screen that shows before the homepage.
+2.	Styled the splash screen logo with a smooth zoom-in animation.
+3.	Made the splash screen fade out after a few seconds.
+4.	Set the homepage to fade in after the splash screen disappears.
+5.	Gave the header logo a unique style, with hover effects (slight zoom + glow).
+
+   Gallery CSS Changes
+
+1.	Styled the splash screen logo with a smooth zoom-in animation
+2.	Gave the header logo a unique style, with hover effects(slight zoom+ glow)
+3.	Added videos
+   About us CSS Changes
+
+1.	Styled the splash screen logo with a smooth zoom-in animation
+2.	Gave the header logo a unique style, with hover effects(slight zoom+ glow)
+
+   Services CSS Changes
+
+1.	Styled the splash screen logo with a smooth zoom-in animation
+2.Gave the header logo a unique style, with hover effects(slight zoom+ glow)
+
+   Contact Us CSS Changes
+
+1.	Styled the splash screen logo with a smooth zoom-in animation
+2.	Gave the header logo a unique style, with hover effects(slight zoom+ glow)
+
+
+README(SCREENSHORT EVIDENCE)
+"_C__Users_st10498813_Downloads_OneDrive_2025-09-29_(WEDE5020)ST10498813(p1%20&%20p2)_index.html(iPhone XR).png"
+"_C__Users_st10498813_Downloads_OneDrive_2025-09-29_(WEDE5020)ST10498813(p1%20&%20p2)_index.html(desktop).png"
+"_C__Users_st10498813_Downloads_OneDrive_2025-09-29_(WEDE5020)ST10498813(p1%20&%20p2)_index.html(iPad Air).png"
+
+
 
 
