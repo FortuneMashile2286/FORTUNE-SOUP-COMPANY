@@ -136,6 +136,15 @@ README(SCREENSHORT EVIDENCE)
 "_C__Users_st10498813_Downloads_OneDrive_2025-09-29_(WEDE5020)ST10498813(p1%20&%20p2)_index.html(desktop).png"
 "_C__Users_st10498813_Downloads_OneDrive_2025-09-29_(WEDE5020)ST10498813(p1%20&%20p2)_index.html(iPad Air).png"
 
+References
+•	Chaffey, D. and Ellis-Chadwick, F. (2019) Digital marketing: strategy, implementation and practice. 7th ed. Harlow: Pearson Education.
+•	Kotler, P. and Keller, K.L. (2016) Marketing management. 15th ed. Harlow: Pearson Education.
+•	Nielsen Norman Group (2019) Usability 101: introduction to usability. Available at: https://www.nngroup.com/articles/usability-101-introduction-to-usability (Accessed: 15 August 2025).
+•	Nonprofit Tech for Good (2022) The importance of websites for nonprofits. Available at: https://www.nptechforgood.com (Accessed: 15 August 2025).
+•	Statistics South Africa (2023) Poverty trends in South Africa: an examination of absolute poverty between 2006 and 2021. Pretoria: Statistics South Africa. Available at: https://www.statssa.gov.za (Accessed: 15 August 2025).
+•	Web AIM (2021) Introduction to web accessibility. Available at: https://webaim.org/intro (Accessed: 15 August 2025).
+
+
 
 
 
