@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery - Fortune Soup Company</title>
+    <link rel="stylesheet" href="styles.css" />
+  
+<style>
+/* Gallery Grid Styling */
+.gallery-grid img {
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
+
+/* Modal Popup */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  overflow: hidden;
+  animation: fadeIn 0.4s;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+  animation: zoomIn 0.4s;
+}
+@keyframes zoomIn {
+  from {transform: scale(0.6);}
+  to {transform: scale(1);}
+}
+
+/* Caption */
+#caption {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.close:hover { color: orangered; }
+
+/* Next & Prev buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 20px;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  transition: 0.3s;
+  user-select: none;
+}
+.prev { left: 0; }
+.next { right: 0; }
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+}
+
+/* Video Section */
+.video-section {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+.video-section video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+</style>
+
+</head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Fortune <span>Soup</span> Company</a>
+        
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="gallery.html" class="nav-link active">Gallery</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
+    
+      </div>
+    </header>
+    <main>
+
+<section class="about">
+  <div class="container card card-elevated" style="margin-top: 2rem;">
+    <h1>Gallery</h1>
+    <p>
+      Take a look at some moments from Fortune Soup Company — from our community soup kitchens
+      to the delicious meals we prepare daily.
+    </p>
+    <div class="gallery-grid" style="margin-top: 1.5rem; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+      <figure class="card img-card">
+        <img src="delicous-warming-soup-12363310.webp" alt="Bowl of soup" />
+        <figcaption>Hearty Soup</figcaption>
+      </figure>
+      <figure class="card img-card">
+        <img src="R.jfif" alt="Freshly baked bread" />
+        <figcaption>Fresh Bread</figcaption>
+      </figure>
+      <figure class="card img-card">
+        <img src="homeless-man-african-appearance-eating-bread-street-cruel-reality-poverty_946670-290.avif" alt="Serving soup to the community" />
+        <figcaption>Community Service</figcaption>
+      </figure>
+      <figure class="card img-card">
+        <img src="fh-1.jpg" alt="Cooking team" />
+        <figcaption>Our Team at Work</figcaption>
+      </figure>
+      
+      
+    </div>
+  </div>
+</section>
+
+    
+ <div class="video container"></div>>
+<video width="20%" height="340" controls>
+  <source src="Grateful Homeless Man Gave Him His Last Bread and This Happened.mp4" type="video/mp4">
+  Your browser does not support the video tag
+ </div>
+</video>
+
+<div class="video container"></div>>
+<video width="20%" height="340" controls>
+  <source src="Handing Out Soup to Hungry People!.mp4" type="video/mp4">
+  Your browser does not support the video tag
+ </div>
+</video>
+  
+<div class="video container"></div>>
+<video width="20%" height="340" controls>
+  <source src="Homeless Man Asked For Bread but Got Something That Will Change His Life.mp4" type="video/mp4">
+  Your browser does not support the video tag
+ </div>
+</video>
+  
+
+  
+  
+
+
+</main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2025 Fortune Soup Company. All rights reserved.</p>
+        <p class="small">Pretoria, South Africa</p>
+      </div>
+    </footer>
+  
+<!-- Image Popup Modal -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="popupImg">
+  <div id="caption"></div>
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</div>
+
+<script>
+let modal = document.getElementById("imgModal");
+let modalImg = document.getElementById("popupImg");
+let captionText = document.getElementById("caption");
+let images = document.querySelectorAll(".gallery-grid img");
+let currentIndex = 0;
+
+function openModal(index) {
+  currentIndex = index;
+  modal.style.display = "block";
+  modalImg.src = images[index].src;
+  captionText.innerHTML = images[index].alt;
+}
+
+images.forEach((img, i) => {
+  img.addEventListener("click", () => openModal(i));
+});
+
+// Close
+document.querySelector(".close").onclick = () => modal.style.display = "none";
+
+// Next/Prev
+document.querySelector(".next").onclick = () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  openModal(currentIndex);
+};
+document.querySelector(".prev").onclick = () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  openModal(currentIndex);
+};
+
+// Close when clicking outside image
+modal.onclick = function(e) {
+  if (e.target === modal) { modal.style.display = "none"; }
+};
+</script>
+
+</body>
+</html>
