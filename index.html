@@ -1,92 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HOME PAGE</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="index.html">Fortune <span>Soup</span> Company</a>
-        
-        <nav class="nav">
-          <a href="index.html" class="nav-link active">Home</a>
-          <a href="about.html" class="nav-link">About Us</a>
-          <a href="services.html" class="nav-link">Services</a>
-          <a href="gallery.html" class="nav-link">Gallery</a>
-          <a href="contact.html" class="nav-link">Contact Us</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fortune Soup Company - Home</title>
 
- <style>
+  <!-- ✅ SEO optimisation -->
+  <meta name="description" content="Fortune Soup Company - Serving warmth, one bowl at a time. Community-driven soup and bread service supporting Pretoria." />
+  <meta name="keywords" content="soup kitchen, Pretoria charity, community food support, Fortune Soup Company, donations, nonprofit" />
+  <meta name="author" content="Fortune Soup Company" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+      background-color: powderblue;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .logo-container img {
+      width: 400px;
+      height: auto;
+    }
+
+    /* 🔎 SEARCH BAR */
+    .search-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: none;
+      box-shadow: 0 0 5px rgb(0 0 0 / 40%);
+      font-size: 16px;
+    }
+
+    .search-results {
+      position: absolute;
+      width: 100%;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+      max-height: 220px;
+      overflow-y: auto;
+      display: none;
+      z-index: 999;
+    }
+
+    .search-results p {
+      padding: 10px;
+      margin: 0;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+
+    .search-results p:hover {
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Fortune <span>Soup</span> Company</a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="enquiry.html" class="nav-link">Enquiry</a>
+      </nav>
+    </div>
+  </header>
+
   
-    
-
-     body {background-color: powderblue;}
-    </style>
-   
-        </nav>
-    
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-text">
-            <h1>Serving warmth, one bowl at a time</h1>
-            <p>
-              At Fortune Soup Company we believe that a warm bowl of soup can do more than just fill a stomach —
-              it can nourish the soul and spark change.
-            </p>
-           
-          </div>
-          <div class="hero-media">
-            <figure class="card img-card">
-              <img src="R.jpg" alt="A bowl of delicious warming soup" />
-              <figcaption>Hearty, nourishing soup</figcaption>
-            </figure>
-        
-
-<figure class="card img-card">
-              <img src="Image_Aug_24__2025__10_09_30_PM-removebg-preview.png" alt="LOGO" />
-              <figcaption>LOGO
-              
-              </figcaption>
-
-
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="about">
-        <div class="container">
-          <div class="card card-elevated">
-            <h2>Wholesome ingredients. Homely touch.</h2>
-   <p>
-     Our soups are made with wholesome ingredients sourced from local farmers and generous donors,
-     ensuring every serving is both nourishing and comforting. The bread — baked fresh each morning —
-     adds the familiar, homely touch that makes every meal feel like it was made for you.
-            </p>
-          </div>
-        </div>
-      </section>
-
-<section class="cta-band">
-        <div class="container cta-inner">
-          <h3>Want to support our community work?</h3>
-          <p>Partner with us to provide soup and bread to people in need across Pretoria.</p>
-          <a href="contact.html" class="btn btn-light">Partner With Us</a>
-        </div>
-      </section>
-</main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>&copy; 2025 Fortune Soup Company. All rights reserved.</p>
-        <p class="small">Pretoria, South Africa</p>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search this site..." />
+    <div id="resultsBox" class="search-results"></div>
   </div>
-    </footer>
-  </body>
+
+  <main>
+    <section class="logo-container">
+      <img src="Image_Aug_24__2025__10_09_30_PM-removebg-preview.png" alt="Fortune Soup Company Logo"  alt="image">
+    </section>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Serving warmth, one bowl at a time</h1>
+          <p>
+            At Fortune Soup Company we believe that a warm bowl of soup can nourish the soul and spark real change.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="card card-elevated">
+          <h2>Wholesome ingredients. Homely touch.</h2>
+          <p>
+            Our soups are made with wholesome ingredients sourced from local farmers and generous donors. 
+            Freshly baked bread daily adds a homely touch that makes each meal special.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <h3>Want to support our community work?</h3>
+        <p>Partner with us to provide soup and bread to people in need across Pretoria.</p>
+        <a href="contact.html" class="btn btn-light">Partner With Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Fortune Soup Company. All rights reserved.</p>
+      <p class="small">Pretoria, South Africa</p>
+
+      <a href="https://www.whatsapp.com" target="_blank">
+        <img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png"  alt="image">
+      </a>
+
+      <a href="https://www.linkedin.com" target="_blank">
+        <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png"  alt="image">
+      </a>
+
+      <a href="https://www.facebook.com" target="_blank">
+        <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png"  alt="image">
+      </a>
+
+      <a href="https://www.instagram.com" target="_blank">
+        <img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png"  alt="image">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+  const searchInput = document.getElementById("searchInput");
+  const resultsBox = document.getElementById("resultsBox");
+
+  
+  function runRedirectSearch() {
+    let query = searchInput.value.toLowerCase().trim();
+
+  
+    const pages = {
+      "home": "index.html",
+      "homepage": "index.html",
+      "index": "index.html",
+
+      "about": "about.html",
+      "about us": "about.html",
+      "who are we": "about.html",
+
+      "services": "services.html",
+      "our services": "services.html",
+
+      "gallery": "gallery.html",
+      "photos": "gallery.html",
+
+      "contact": "contact.html",
+      "contact us": "contact.html",
+      "get in touch": "contact.html",
+
+      "enquiry": "enquiry.html",
+      "enquiries": "enquiry.html",
+
+      "donate": "contact.html",
+      "donation": "contact.html"
+    };
+
+  
+    if (pages[query]) {
+      window.location.href = pages[query];
+    }
+  }
+
+  
+  searchInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      runRedirectSearch();
+    }
+  });
+
+  
+  function liveSearch() {
+    let query = searchInput.value.toLowerCase().trim();
+
+    resultsBox.innerHTML = "";
+    resultsBox.style.display = "none";
+
+    if (query.length === 0) return;
+
+    let text = document.body.innerText
+      .replace(/\s+/g, " ")
+      .split(". ")
+      .map(t => t.trim())
+      .filter(t => t.length > 5);
+
+    let matches = text.filter(line => line.toLowerCase().includes(query));
+
+    if (matches.length > 0) {
+      resultsBox.style.display = "block";
+
+      matches.slice(0, 8).forEach(result => {
+        let item = document.createElement("p");
+        item.textContent = result.substring(0, 90) + "...";
+        resultsBox.appendChild(item);
+      });
+    }
+  }
+
+  searchInput.addEventListener("input", liveSearch);
+
+  document.addEventListener("click", function (e) {
+    if (!resultsBox.contains(e.target) && e.target !== searchInput) {
+      resultsBox.style.display = "none";
+    }
+  });
+</script>
+
+
+<script src="js/main.js"></script>
+</body>
 </html>

@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enquiry</title>
+  <meta name="description" content="Enquiry page for Fortune Soup Company – a non-profit organization nourishing hope, one bowl at a time.">
+  <meta name="keywords" content="Fortune Soup Company, non-profit, volunteering, donations, community feeding, charity">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero {text-align:center;margin-bottom:20px;padding:20px;background:#f6f6f6;border-radius:8px}
+    .hero h1{margin:0;font-size:28px;color:#2945a1}
+    .hero p{max-width:600px;margin:10px auto;color:#333;font-size:16px}
+    form label{display:block;margin-top:10px;font-weight:600}
+    input,select,textarea{width:100%;padding:10px;margin-top:4px;border:1px solid #ccc;border-radius:6px;font-family:inherit}
+    button{background:#2b6cb0;color:#fff;border:none;padding:12px 20px;margin-top:16px;border-radius:6px;cursor:pointer;font-size:15px}
+    button:hover{background:#1e4e84}
+    .success-msg{display:none;padding:15px;background:#070707;border-left:4px solid #020303;border-radius:6px;margin-top:20px}
+  </style>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: powderblue;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .logo-container {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .logo-container img {
+        width: 400px;
+        height: auto;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Fortune <span>Soup</span> Company</a>
+        <nav class="nav">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+           <a href="enquiry.html" class="nav-link active">Enquiry</a>
+ </nav>
+      </div>
+    </header>
+<body>
+<main class="card">
+    <section class="hero">
+      
+      <p><strong>“Nourishing hope, one bowl at a time.”</strong><br>
+      We appreciate your interest in supporting Fortune Soup Company. Whether you’d like to volunteer,partner with us, please fill out the form below — our team will get in touch soon.</p>
+    </section>
+
+    <form class="js-validated" id="enquiryForm">
+      <label for="name">Full Name</label>
+      <input name="name" type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+27 000 000 0000">
+
+      <label for="type">Enquiry Type</label>
+      <select id="type" name="type" required>
+        <option value="">-- Select an option --</option>
+        <option value="volunteering">Volunteering</option>
+        <option value="partnership">Partnerships</option>
+        <option value="general">General Enquiry</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="How would you like to get involved?" required></textarea>
+
+      <button type="submit">Submit Enquiry</button>
+      <div class="success-msg" id="successMsg">✅ Thank you for reaching out to Fortune Soup Company. We’ll respond soon!</div>
+    </form>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    const form=document.getElementById('enquiryForm');const success=document.getElementById('successMsg');
+    form.addEventListener('submit',e=>{e.preventDefault();if(validateForm(form)){success.style.display='block';form.reset();window.scrollTo({top:0,behavior:'smooth'});}});
+  </script>
+</body>
+
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2025 Fortune Soup Company. All rights reserved.</p>
+        <p class="small">Pretoria, South Africa</p>
+
+ 
+    </footer>
+  </body>
+</html>
+
+
+
