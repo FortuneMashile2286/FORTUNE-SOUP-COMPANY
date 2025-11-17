@@ -157,6 +157,34 @@ POE(PART3)
 - Updated gallery and contact/enquiry pages to include main.js.
 - Created this changelog to document edits required in Part 3.
 
+- SITEMAPS
+- <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://about.html</loc>
+<lastmod>2025-11-17T17:36:46Z</lastmod>
+</url>
+<url>
+<loc>https://contact.html</loc>
+<lastmod>2025-11-17T17:36:46Z</lastmod>
+</url>
+<url>
+<loc>https://enquiry.html</loc>
+<lastmod>2025-11-17T17:36:46Z</lastmod>
+</url>
+<url>
+<loc>https://gallery.html</loc>
+<lastmod>2025-11-17T17:36:46Z</lastmod>
+</url>
+<url>
+<loc>https://index.html</loc>
+<lastmod>2025-11-17T17:36:46Z</lastmod>
+</url>
+<url>
+<loc>https://services.html</loc>
+<lastmod>2025-11-17T17:36:46Z</lastmod>
+</url>
+</urlset>
+
 
 
 
