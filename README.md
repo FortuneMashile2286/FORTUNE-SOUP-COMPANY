@@ -145,6 +145,21 @@ References
 •	Web AIM (2021) Introduction to web accessibility. Available at: https://webaim.org/intro (Accessed: 15 August 2025).
 
 
+POE(PART3)
+- Date: 2025-11-17
+- Implemented enhanced JavaScript validation and form processing.
+- Added modal utility to preview compiled form email content.
+- Implemented lightbox behavior for gallery images.
+- Added search/filter for services page (input with id `service-search`).
+- Added accordion styles and basic toggles on about/services.
+- Added robots.txt and sitemap.xml files.
+- Added alt text to gallery images where missing.
+- Updated gallery and contact/enquiry pages to include main.js.
+- Created this changelog to document edits required in Part 3.
+
+
+
+
 
 
 
