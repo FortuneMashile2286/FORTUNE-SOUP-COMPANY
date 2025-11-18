@@ -145,17 +145,159 @@ References
 •	Web AIM (2021) Introduction to web accessibility. Available at: https://webaim.org/intro (Accessed: 15 August 2025).
 
 
-POE(PART3)
-- Date: 2025-11-17
-- Implemented enhanced JavaScript validation and form processing.
-- Added modal utility to preview compiled form email content.
-- Implemented lightbox behavior for gallery images.
-- Added search/filter for services page (input with id `service-search`).
-- Added accordion styles and basic toggles on about/services.
-- Added robots.txt and sitemap.xml files.
-- Added alt text to gallery images where missing.
-- Updated gallery and contact/enquiry pages to include main.js.
-- Created this changelog to document edits required in Part 3.
+POE
+PART3
+
+Website
+
+1. index.html 
+
+Branding updated
+“Fortune Soup Company” name and logo elements were changed.
+
+Navigation bar updated
+Some nav structure, class names, and styling hooks were changed.
+Hero section redesigned
+Text, layout, and CSS classes updated for a more modern look.
+New sections added
+– Welcome text
+– Services highlight area
+– Gallery preview
+
+Footer updated (BIG CHANGE)
+Footer text was changed to:
+© 2025 Fortune Soup Company. All rights reserved.
+
+Images replaced / repositioned
+New images (R.jpg, R.jfif, avif image) are used in the gallery/hero sections.
+
+New JS added
+<script src="js/main.js"></script> was inserted at the bottom.
+
+2. about.html 
+
+
+New header structure (same style as index).
+
+Branding + nav updated to match new theme
+
+New “About Us” content added:
+
+More paragraphs
+
+Cleaner layout
+
+Updated text describing the soup company’s mission
+
+New image added in the about section
+
+Footer updated to 2025
+
+Main.js script added
+
+ 3. contact.html
+
+Completely redesigned contact form
+
+New layout
+
+Updated labels
+
+Better spacing / styles
+
+Navigation updated
+
+Footer updated
+
+Form action / classes changed
+
+JavaScript file added
+
+ 4. gallery.html 
+
+New gallery grid design
+
+CSS classes updated to support hover animations
+
+Images replaced / reorganized
+
+Footer updated
+
+New JavaScript script added
+
+ 5. services.html 
+
+New services description layout
+
+Updated content describing what the soup company offers
+
+New icons removed/added depending on sections
+
+Footer updated (to 2025)
+
+Navigation updated
+
+JavaScript added
+
+6. enquiry.html 
+
+
+
+
+Brand-new enquiry form page added to the site.
+
+Includes fields such as:
+
+Full Name
+
+Email
+
+Phone
+
+Message
+
+Form redesigned using the same layout style as contact.html.
+
+Navigation bar updated to match the new design of other pages.
+
+Footer updated with 2025 copyright.
+
+JavaScript file added at the bottom of the page.
+
+Consistent branding and color styling with the PART3 theme.
+
+Mobile-friendly layout was introduced (better responsiveness).
+
+
+ 
+
+
+Reference list 
+
+•	W3C. (2024). HTML & CSS Standards. World Wide Web Consortium.
+Available at: https://www.w3.org/
+ 	Accessed 18 November 2025).
+
+•	Mozilla Developer Network (MDN). (2024). HTML Elements Reference.
+Available at: https://developer.mozilla.org/
+ 	(Accessed 18 November 2025).
+
+•	Nielsen, J. (2020). Usability Heuristics for User Interface Design. Nielsen Norman Group.
+Available at: https://www.nngroup.com/articles/ten-usability-heuristics
+ 	(Accessed 18 November 2025).
+
+•	W3Schools. (2024). CSS Styling and Responsive Web Design.
+Available at: https://www.w3schools.com/
+ 	(Accessed 18 November 2025).
+
+•	Google Developers. (2024). Search Engine Optimization (SEO) Starter Guide.
+Available at: https://developers.google.com/
+ (Accessed 18 November 2025).
+
+•	Blessing, L. & Chakrabarti, A. (2019). Design Theory and Methodology. Springer.
+(Used for general design principles and improvement methodology.)
+
+•	Krug, S. (2014). Don’t Make Me Think, Revisited: A Common Sense Approach to Web Usability. 3rd edn. New Riders.
 
 - SITEMAPS
 - <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
